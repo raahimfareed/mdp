@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hello, World!</title>
+  <link rel="preconnect" href="https://fonts.bunny.net">
+  <link href="https://fonts.bunny.net/css?family=poppins:400,400i,700,700i" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/markdown.css') }}">
 </head>
-<body>
-  Hello, World 2
+<body class="markdown">
+    {{ contents | safe }}
 </body>
 </html>
